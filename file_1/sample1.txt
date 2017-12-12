@@ -1,0 +1,13 @@
+phases involved in devops:
+1.vcs
+2.automation
+3.Continous integration.
+4.deployment
+5.delivery
+
+Vcs ( Version control system) 
+	. centralised 
+	. distributed
+
+
+	Centralised VCS : centralised version controls systemd are based on the idea that there is single central copy (ex: server) and programmers will commit there changes to the server
