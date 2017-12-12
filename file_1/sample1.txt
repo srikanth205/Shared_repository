@@ -1,0 +1,6 @@
+phases involved in devops:
+1.vcs
+2.automation
+3.Continous integration.
+4.deployment
+5.delivery
