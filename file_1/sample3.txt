@@ -1,0 +1,4 @@
+terminologies of git divided into three sections:
+section-1
+section-2
+section-3
