@@ -1,3 +1,7 @@
 new branch  $ git branch [branch name]
 old branch $ git branch
+<<<<<<< HEAD
 We are creating files
+=======
+old new branch is only the branch
+>>>>>>> commiting other time for dilips file
