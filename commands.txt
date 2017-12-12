@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 new branch  $ git branch [branch name]
 old branch $ git branch
 We are creating files
+=======
+new branch ----  $ git branch [branch name]
+edit confif ---- $ git config --edit
+
+>>>>>>> add config edit command
