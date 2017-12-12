@@ -9,3 +9,5 @@ Vcs ( Version control system)
 	. centralised 
 	. distributed
 
+
+	Centralised VCS : centralised version controls systemd are based on the idea that there is single central copy (ex: server) and programmers will commit there changes to the server

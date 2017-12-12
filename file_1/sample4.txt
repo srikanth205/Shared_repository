@@ -1,0 +1,3 @@
+clone : getting the code for the very first time from the server
+Status : it shows the status of the working copy
+
