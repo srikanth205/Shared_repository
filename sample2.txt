@@ -1,4 +1,4 @@
 types of vcs:
 1.centralised vcs
 2.distributed vcs
-
+3.We are learning DevOps.
