@@ -1,2 +1,3 @@
 This files contains git command
 git add .  > Multiple files added Index
+git add -A > This command also add multiple files simultaneously to Index
