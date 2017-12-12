@@ -4,3 +4,8 @@ phases involved in devops:
 3.Continous integration.
 4.deployment
 5.delivery
+
+Vcs ( Version control system) 
+	. centralised 
+	. distributed
+
