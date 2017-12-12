@@ -2,3 +2,5 @@ types of vcs:
 1.centralised vcs
 2.distributed vcs
 
+1. Example for centralised Vcs is SVN
+2. Example for distributed vcs is Git
