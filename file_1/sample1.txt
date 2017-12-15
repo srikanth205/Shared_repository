@@ -9,3 +9,6 @@ Vcs ( Version control system)
 	. centralised 
 	. distributed
 
+
+Example for Centralised is SVN
+Example for Distributed is GIT
