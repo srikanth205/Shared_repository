@@ -7,8 +7,8 @@ phases involved in devops:
 
 Vcs ( Version control system) 
 	. centralised 
-	. distributed
-
-
-Example for Centralised is SVN
+	. distribute
 Example for Distributed is GIT
+
+vcs plays key role in software company
+
