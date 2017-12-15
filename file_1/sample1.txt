@@ -9,3 +9,4 @@ Vcs ( Version control system)
 	. centralised 
 	. distributed
 vcs plays key role in software company
+git and svn are both version control systems
