@@ -1,15 +1,10 @@
-<<<<<<< HEAD
+
 new branch  $ git branch [branch name]
 old branch $ git branch
-<<<<<<< HEAD
+
 We are creating files
-=======
-<<<<<<< HEAD
+
 new branch ----  $ git branch [branch name]
 edit confif ---- $ git config --edit
 
->>>>>>> add config edit command
-=======
 old new branch is only the branch
->>>>>>> commiting other time for dilips file
->>>>>>> 0b27c614aba296b3e8239c2f11aac5c25af690de
