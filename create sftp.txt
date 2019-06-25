@@ -1,0 +1,34 @@
+Create SFTP Server for S3:
+
+1. In Amazon Console go to AWS Transfer for SFTP and create a new server
+   (You can keep server options default for start up)
+                    or
+Select Identity Provider(Service Managed/Custom)
+Give custom hostname for Server
+Add tags if any (optional)
+
+Creates a server
+
+
+2.Add a new SFTP User(or Users)
+  
+Permissions of Users are governed by an assoiciated AWS role in IAM service.
+To create a role which has a full access to all your s3 buckets, just create an s3 service role with AmazonS3 Full Access policy
+The role must have trust relationship to transfer.amazonaws.com
+(on the role page select Trust relationship and in the access policy Json doc change if needed)
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "transfer.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+
+3. Generate a key pair for your new user and paste public key fingerprint SShbox
+         ssh-keygen to generate key pair
+  

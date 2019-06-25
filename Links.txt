@@ -1,0 +1,35 @@
+Bitbucket: https://bitbucket.org/socialauth/login/atlassianid/?next=%2F
+
+Artifactory: https://maritzmotivation.jfrog.io/maritzmotivation/webapp/#/login
+
+Jenkins:
+1.	dev-jenkins.salesnext.com
+2.	k8s-jenkins.salesnext.com
+3.	legacy-jenkins.salesnext.com
+4.	provisioning-jenkins.salesnext.com
+5. https://components-build.maritz.com/jenkins/
+Username: chepuris/Password: Chepuris0
+
+Nacho Rocket Kanban Board: https://maritz.atlassian.net/secure/RapidBoard.jspa?rapidView=186&projectKey=SV
+
+RED IM
+AWS
+
+https://maritz.service-now.com/
+
+https://sts.maritz.com/adfs/ls/IdpInitiatedSignOn.aspx?loginToRp=urn:amazon:webservices
+
+https://maritzmotivation.jfrog.io/maritzmotivation/webapp/#/home
+
+
+https://mm-dev-eks-monitoring.salesnext.com
+
+ 
+Grafana:
+user: admin
+pswd: Maritzkubemonitor
+
+
+space-id 0bp980f9520v
+Delivery API: c09be3853189a216ba8d48faef9612f7de49525428e6db0d37550e5d8536cd28
+Preview API: 833e436917a393352fb839ebc1b10a915808225c02caa5697f1002954e022a63

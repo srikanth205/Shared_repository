@@ -1,0 +1,30 @@
+	Connecting EKS to Rds:
+-------------------------
+When we create a K8s Eks Cluster a new Vpc with CIDR IP is created.In the same way for RDS a new vpc is created.Aws has a mechanism " Peering Connection " 
+
+Steps:
+------
+1. In order to setup connection between EKS and RDS create a peering connection between EKS cluster and RDS. The connection should be initiated from RDS VPC to EKS VPC
+     
+                 RDS(VPC)<====================>EKS-K8S(VPC)
+                                         connection create
+
+2. Routing tables need to be updated for both the VPC's
+
+3. For EKS routing table, create a new route with destination which corresponds to CIDR IP of RDS VPC and peering connection as target.
+
+4. Similarly, for RDS routing table, create a new route with destination which corresponds to CIDR IP of EKS VPC and peering connection as target.
+
+5. Now update RDS security Group, add a new rule which allows all traffic from EKS CIDR IP
+
+6. Finally goto "peering connection" and change its configuration by enabling a DNS propagation
+
+
+
+Reference:
+-----------
+https://discourse.mozilla.org/t/kubernetes-infrastructure-vpc-peering-discussion/31652
+
+
+
+

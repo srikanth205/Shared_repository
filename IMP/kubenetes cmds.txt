@@ -1,0 +1,93 @@
+	Try putting this kubectl config file in ~/.kube/config
+
+ 
+$ kubectl --context=mmdev-EKS get namespace
+$ kubectl --context=mm-dev-EKS --namespace=latest get pods
+$ kubectl --context=mm-prd-eks get ns
+$ kubectl --context=mm-dev-eks cluster-info
+
+kubectl cluster-info
+kubectl get ns
+
+kuebctl config current-context
+
+kubectl config view
+
+kubectl --namespace=singularity-latest get pods
+
+kubectl --namespace=kube-system get pods
+kubectl --namespace=latest get pods
+kubectl --namespace=latest get pods -o name
+
+
+kubectl --namespace=latest delete pod/.......
+
+kubectl --namespace=latest get pods
+
+kubectl config use-context mm-dev-EKS (for changing Context)
+kubectl help
+kubectl command --help
+kubectl get svc
+l
+%s/latest/atlas/g--->{to replace latest to atlas in Vi}
+
+aws eks describe-cluster --name mm-dev-eks --query cluster cluster.status
+aws eks update-kubeconfigure --name mm-dev-eks
+
+
+kubectl get nodes -o yaml
+kubectl get nodes --all-namespaces
+kubectl logs -n kubesystem<pod>    To get pods
+kubectl get pod<pod> -o yaml --namespace=<namespace>
+kubectl describe pod --namespace=<namespace>    details of pod
+kubectl --namespace=latest delete pod neo4j-server-deployment-7fd995c69f-tvkln   delete pod
+
+connect to pod:
+kubectl exec -it --namespace=trio sql-server-statefulset-0 -- bash
+kubectl exec -it --namespace=latest <pod> -- bash
+kubectl exec -it <pod> -- /bin/bash
+
+kubectl get pods --namespace= latest    All pods with status
+kubectl describe pod<pod> --namespace=latest
+kubectl describe node ip...
+kubectl run curl --image= resdial/busyboxplus: curl -i --tty
+
+ps -ef, ps auwx(to know running service), df -h, du -sch*, free -m
+netstat -tnlp, nstat, nstat -t, nstat -s,nstat -asz, ss -t, ss-ta
+ss -tnl(to know service running on which port), ss -ltp
+
+kubectl -n test get deploy
+kubectl -n test get all deploy
+kubectl -n test sing.auth.ms.depl -o yaml
+kubectl -n test sing. ..          -o yaml |grep -i image
+kubectl ..........................-o yal |Select-String _Pattern "image"     (Powershell)
+
+Deploy container:
+Pull the image from the Repository and create a Container on the Cluster:
+kubectl run my-app --image=gcr.io/some-repo/my-app:v1 --port=3000
+deployment "my-app" created
+
+Expose the Kubernetes Deployment through a Load Balancer:
+kubectl expose deployment my-app --type=LoadBalancer --port=8080 --target-port=3000
+service "my-app" exposed
+Find the external IP of your Container:
+kubectl get svc
+
+Use Kubernetes Rolling Updates:
+kubectl set image deployment/my-app  my-app=gcr.io/some-repo/my-app:v2
+
+Must be in the there paths and do:
+Service:
+kubectl --namespace=atlas apply -f service
+
+Ingress:
+kubectl --namespace=atlas apply -f ingress.extensions
+
+Deployment:
+kubectl --namespace=atlas apply -f deployment
+
+
+Deleting deployment/pods:
+kubectl get deployments --all-namespaces
+kubectl delete -n NAMESPACE deployment DEPLOYMENT
+
